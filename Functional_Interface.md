@@ -7,7 +7,7 @@ It consists of an interface with a single method with a name like run, execute, 
  - You can use it as anonymous or named class
  - Related patterns: [Command](), [Template method](), [Strategy](), [Builder]()
 
-## Java example:
+### Java example
  ```scala
  Comparator personComparator = new Comparator<Person>() {
    public int compare(Person p1, Person p2) {
@@ -18,7 +18,7 @@ It consists of an interface with a single method with a name like run, execute, 
  Collections.sort(people, personComparator);
  ```
 
-### Scala Replacement:
+### Scala Replacement
  - function as high order
  ```scala
  case class Person(firstName: String, lastName: String)
