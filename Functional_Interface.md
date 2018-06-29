@@ -8,7 +8,7 @@ It consists of an interface with a single method with a name like run, execute, 
  - Related patterns: [Command](), [Template method](), [Strategy](), [Builder]()
 
 ## Java example:
- ```
+ ```scala
  Comparator personComparator = new Comparator<Person>() {
    public int compare(Person p1, Person p2) {
      return p1.getFirstName().compareTo(p2.getFirstName());
@@ -20,7 +20,7 @@ It consists of an interface with a single method with a name like run, execute, 
 
 ### Scala Replacement:
  - function as high order
- ```
+ ```scala
  case class Person(firstName: String, lastName: String)
  val comparator: (Person, Person) => Boolean = (p1, p2) => p1.lastName < p2.lastName
  people.sortWith(comparator)
