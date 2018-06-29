@@ -7,7 +7,7 @@ For encapsulating state along with program logic ([functional interface](https:/
  
  ### Java example
   - To carry state around by creating fields on the class and by providing setters.
-  ```scala
+  ```java
   public class ComposedComparator<T> implements Comparator<T> {
     private Comparator<T>[] comparators;
     
