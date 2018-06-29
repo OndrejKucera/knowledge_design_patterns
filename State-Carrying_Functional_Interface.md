@@ -25,7 +25,7 @@ For encapsulating state along with program logic ([functional interface](https:/
  ### Scala Replacement:
   - A closure wraps up a function along with the state available to it when it was created. 
   - No need to do anything special to create a closure; the compiler and runtime take care of it.
-  ```
+  ```scala
   def makeComposedComparison(comparisons: (Person, Person) => Int*) = 	
     (p1: Person, p2: Person) => comparisons.map(cmp => cmp(p1, p2)).find(_ != 0).getOrElse(0)
   ```
