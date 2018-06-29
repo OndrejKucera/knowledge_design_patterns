@@ -7,7 +7,7 @@ To create an **immutable object** using a friendly syntax for setting attributes
  - Related patterns: [Focused Mutability]()
 
 ### Java example
- - ...
+ - lot of code for such a basic task :(
  ```java
  public class ImmutablePerson {
    private final String firstName;
@@ -46,4 +46,15 @@ To create an **immutable object** using a friendly syntax for setting attributes
 
 ### Scala Replacement
  - Three different techniques to create immutable object
+ - Immutable classes: plain classes that only contain immutable attributes, neccesary to code hash codes for equality, or a nice representation when printed
+ ```scala
+ class Person(
+   val firstName: String,
+   val middleName: String = "",
+   val lastName: String
+ )
+ ```
+ - Case classes: special kind of class intended to work with Scala’s pattern matching
+ 
+ - Tuples: immutable data structures that let us group data together
  
