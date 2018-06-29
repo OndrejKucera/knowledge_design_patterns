@@ -16,13 +16,13 @@ Replacing Object-Oriented Patterns:
 10) Visitor (behavioral, gof)
 11) Dependency Injection (behavioral)
 13) Adapter (structural, gof) https://pavelfatin.com/design-patterns-in-scala/
-15) Chain of responsibility (behavioral, gof)
-12) Singleton (creational, gof)
-14) Factory method (creational, gof)
+14) Chain of responsibility (behavioral, gof)
+15) Singleton (creational, gof)
+16) Factory method (creational, gof)
 
 Functional Patterns:
-16) Tail Recursion
-17) ...
+17) Tail Recursion
+18) ...
 
 ... Still in progress
 
