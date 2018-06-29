@@ -5,7 +5,7 @@ It consists of an interface with a single method with a name like run, execute, 
  - also called Functor, Function object
  - same as interfaces: `Runnable`, `Callable`, `Comparator` with their methods
  - You can use it as anonymous or named class
- - Related patterns: [Command](), [Template method](), [Strategy](), [Builder]()
+ - Related patterns: [Command](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Command.md), [Template method](), [Strategy](), [Builder](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Builder.md)
 
 ### Java example
  ```scala
