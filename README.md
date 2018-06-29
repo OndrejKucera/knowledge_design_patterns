@@ -3,8 +3,9 @@ Knowledge - Patterns
 
 Note: The notes are not exhausted knowledge about patterns.
 
-1) [Replacing Functional Interface](https://github.com/OndrejKucera/knowledge_scala/blob/master/Functional_Interface.md)
-2) [...](https://github.com/OndrejKucera/knowledge_scala/blob/master/....md)
+1) [Functional Interface](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Functional_Interface.md)
+2) [State-Carrying Functional Interface](https://github.com/OndrejKucera/knowledge_patterns/blob/master/State-Carrying_Functional_Interface.md)
+3) [...]()
 
 ... Still in progress
 
