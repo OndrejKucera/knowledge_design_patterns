@@ -19,8 +19,7 @@ It consists of an interface with a single method with a name like run, execute, 
  ```
 
 ### Scala Replacement:
- - use function as high order
- - Anonimous Function
+ - function as high order
  ```
  case class Person(firstName: String, lastName: String)
  val comparator: (Person, Person) => Boolean = (p1, p2) => p1.lastName < p2.lastName
