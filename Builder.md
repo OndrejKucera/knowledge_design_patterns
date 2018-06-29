@@ -55,6 +55,15 @@ To create an **immutable object** using a friendly syntax for setting attributes
  )
  ```
  - Case classes: special kind of class intended to work with Scala’s pattern matching
- 
+ ```
+ case class PersonCaseClass(
+   firstName: String,
+   middleName: String = "",
+   lastName: String
+ )
+ ```
  - Tuples: immutable data structures that let us group data together
+ ```
+ def p = ("John", "Adams")
+ ```
  
