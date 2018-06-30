@@ -9,7 +9,7 @@ Replacing Object-Oriented Patterns:
 3) [Command](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Command.md) (behavioral, gof)
 4) [Builder](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Builder.md) (creational, gof)
 5) [Iterator](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Iterator.md) (behavioral, gof)
-6) Template Method (behavioral, gof)
+6) [Template Method]((https://github.com/OndrejKucera/knowledge_patterns/blob/master/Template_Method.md)) (behavioral, gof)
 7) Strategy (behavioral, gof)
 8) Null Object (behavioral, gof)
 9) Decorator (structural, gof)
