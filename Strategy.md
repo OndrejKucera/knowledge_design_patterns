@@ -31,7 +31,7 @@ To define an algorithm in abstract terms so it can be implemented in several dif
 
 ### Scala Replacement
  - use higher-order functions that implement the needed algorithms -> no need for interfaces for different strategy implementations
- - pass our strategy functions aroun
+ - pass our strategy functions around
  ```scala
  def byCreditCard(amount: Double) = ...
  
