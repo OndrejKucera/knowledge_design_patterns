@@ -7,7 +7,26 @@ To define an algorithm in abstract terms so it can be implemented in several dif
 ### Java Example
  - One common use of Strategy is to create different algorithms that can be used to validate the same set of data
  ```java
+ public interface PaymentStrategy {
+   public void pay(int amount);
+ }
  
+ public class CreditCardStrategy implements PaymentStrategy {
+   ...
+ }
+ 
+ public class PaypalStrategy implements PaymentStrategy {
+   ...
+ }
+ 
+ public class ShoppingCart {
+	  ...
+	
+	  public void pay(PaymentStrategy paymentMethod){
+		   int amount = calculateTotal();
+		   paymentMethod.pay(amount);
+	  }
+ }
  ```
 
 ### Scala Replacement
