@@ -21,8 +21,8 @@ Replacing Object-Oriented Patterns:
 15) Singleton (creational, gof)
 
 Functional Patterns:
-17) Tail Recursion
-18) ...
+1) Tail Recursion
+2) ...
 
 ... Still in progress
 
