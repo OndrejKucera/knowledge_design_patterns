@@ -1,7 +1,8 @@
 ## Strategy
 
 To define an algorithm in abstract terms so it can be implemented in several different ways, and to allow it to be used across several different clients.
- - It as 3 parts: One interface represents algorithm, another interface that represent strategy classes. And the client tha uses the strategy. 
+ - It has 3 parts: The first interface represents algorithm, implementations that represent strategy classes. And the client that uses the strategy.
+ - Strategy and Template Method serve similar ends. Both are ways to inject some bit of custom code into a larger framework or algorithm. Strategy does so using composition, and Template Method does so using inheritance.
  - Related patterns: [Functional Interface](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Functional_Interface.md), [Template method](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Template_Method.md)
  
 ### Java Example
@@ -20,12 +21,11 @@ To define an algorithm in abstract terms so it can be implemented in several dif
  }
  
  public class ShoppingCart {
-	  ...
-	
-	  public void pay(PaymentStrategy paymentMethod){
-		   int amount = calculateTotal();
-		   paymentMethod.pay(amount);
-	  }
+   ...
+
+   public void pay(int amount, PaymentStrategy paymentMethod){
+     paymentMethod.pay(amount);
+   }
  }
  ```
 
@@ -33,5 +33,13 @@ To define an algorithm in abstract terms so it can be implemented in several dif
  - use higher-order functions that implement the needed algorithms -> no need for interfaces for different strategy implementations
  - pass our strategy functions aroun
  ```scala
+ def byCreditCard(amount: Double) = ...
  
+ def byPaypal(amount: Double) = ...
+ 
+ def pay(amount: Double, paymentStrategy: Double => Unit) {
+   paymentStrategy(amount)
+ }
+ 
+ pay(20.5, byCreditCard)
  ```
