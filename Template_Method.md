@@ -7,7 +7,6 @@ To specify the outline of an algorithm, letting callers plug in some of the spec
  - Related patterns: [Functional Interface](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Functional_Interface.md), [Strategy](), [Builder](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Builder.md)
  
 ### Java Example
- -
  ```java
  public abstract class TemplateExample{
    public void anOperation(){
