@@ -24,5 +24,24 @@ To specify the outline of an algorithm, letting callers plug in some of the spec
  - Instead of classes to implement suboperations, we’ll use higher-order functions.
  - Instead of relying on subclassing, we’ll rely on function composition.
  ```scala
+ def makeAnOperation(
+   subOperationOne: () => ​Unit​,
+   subOperationTwo: () => ​Unit​) =
+     () => {
+       subOperationOne()
+       subOperationTwo()
+     }
+ )
+ ```
  
+ ``` scala
+ def makeGradeReporter(
+   numToLetter: (Double) => String,
+   printGradeReport: (Seq[String]) => Unit) = (grades: Seq[Double]) => {
+     printGradeReport(grades.map(numToLetter))
+   }
+ }
+ 
+ val fullGradeReporter = makeGradeReporter(fullGradeConverter, printHistogram)
+ val sampleGrades = Vector(5.0, 4.0, 4.4, 2.2, 3.3, 3.5)
  ```
