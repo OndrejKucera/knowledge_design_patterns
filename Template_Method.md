@@ -42,5 +42,7 @@ To specify the outline of an algorithm, letting callers plug in some of the spec
  }
  
  val fullGradeReporter = makeGradeReporter(fullGradeConverter, printHistogram)
+ 
  val sampleGrades = Vector(5.0, 4.0, 4.4, 2.2, 3.3, 3.5)
+ fullGradeReporter(sampleGrades)
  ```
