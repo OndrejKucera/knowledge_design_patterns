@@ -25,7 +25,7 @@ Pattern restricts the instantiation of a class to one object, and provides a glo
  LazySingleton.getInstance()
  ```
  
- - the `Enum` is also used for singleton in Java
+ - the `Enum` is also used for singleton in Java because of thread-safety
  ```java
  public enum EnumSingleton {
    INSTANCE;
