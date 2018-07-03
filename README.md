@@ -11,7 +11,7 @@ Note: Here are not exhausted knowledge about patterns.
   - Patterns create objects for you, rather than having you instantiate objects directly. This makes program more flexibility in deciding which objects need to be created for a given case.
     - [Builder](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Builder.md)
     - [Factory method](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Factory_Method.md)
-    - Singleton (https://pavelfatin.com/design-patterns-in-scala/)
+    - [Singleton](https://github.com/OndrejKucera/knowledge_design_patterns/blob/master/Singleton.md)
 
 #### 2. Behavioral (gof):
  - Patterns are specifically concerned with communication between objects.
