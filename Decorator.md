@@ -10,6 +10,36 @@ It allows to change the behavior of an existing class.
  - We have 2 parts, interface and implemantation in class which we don't want to change
  - Then we implement the interface with an abstract decorator class as a solution
  ```java
+ public interface Troll {
+   void attack();
+   void fleeBattle();
+ }
+
+ public class SimpleTroll implements Troll { ... }
+
+ public class DecoratedTroll implements Troll {
+   private Troll troll;
+
+   public ClubbedTroll(Troll t) {
+     this.troll = t;
+   }
+  
+   @Override
+   public void attack() {
+     troll.attack();
+     // some other decorated funcionality
+   }
+
+   @Override
+   public void fleeBattle() {
+     decorated.fleeBattle();
+     // some other decorated funcionality
+   }
+ }
+ 
+ decoratedTroll = new DecoratedTroll(troll);
+ decoratedTroll.attack();
+ decoratedTroll.fleeBattle();
  ```
 
 ### Scala Replacement
