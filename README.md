@@ -4,9 +4,8 @@ Knowledge - Design Patterns
 Note: Here are not exhausted knowledge about patterns.
 
 ## Replacing Object-Oriented Patterns with Functional Approach:
- [Functional Interface](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Functional_Interface.md)
- 
- [State-Carrying Functional Interface](https://github.com/OndrejKucera/knowledge_patterns/blob/master/State-Carrying_Functional_Interface.md)
+ - [Functional Interface](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Functional_Interface.md)
+ - [State-Carrying Functional Interface](https://github.com/OndrejKucera/knowledge_patterns/blob/master/State-Carrying_Functional_Interface.md)
 
 #### 1. Creational (gof):
   - Patterns create objects for you, rather than having you instantiate objects directly. This makes program more flexibility in deciding which objects need to be created for a given case.
@@ -41,7 +40,5 @@ Note: Here are not exhausted knowledge about patterns.
 8. Customized Control Flow
 9. Domain-Specific Language
 
-The main resources were books [Functional Programming Patterns in Scala and Clojure](https://www.goodreads.com/book/show/17610214-functional-programming-patterns-in-scala-and-clojure) and the [blog post from pavelfatin.com] (https://pavelfatin.com/design-patterns-in-scala/)
-
-
-https://en.wikipedia.org/wiki/Design_Patterns#Patterns_by_Type
+---
+The main resources were book [Functional Programming Patterns in Scala and Clojure](https://www.goodreads.com/book/show/17610214-functional-programming-patterns-in-scala-and-clojure), the [blog post from pavelfatin.com] (https://pavelfatin.com/design-patterns-in-scala/), and [wiki page](https://en.wikipedia.org/wiki/Design_Patterns#Patterns_by_Type)
