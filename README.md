@@ -1,4 +1,4 @@
-Knowledge - Patterns
+Knowledge - Design Patterns
 ====================
 
 Note: The notes are not exhausted knowledge about patterns.
