@@ -3,17 +3,17 @@ Knowledge - Design Patterns
 
 Note: Here are not exhausted knowledge about patterns.
 
-## Replacing Object-Oriented Patterns with Functional Approach:
+## Replacing Object-Oriented Patterns with Functional Approach
  - [Functional Interface](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Functional_Interface.md)
  - [State-Carrying Functional Interface](https://github.com/OndrejKucera/knowledge_patterns/blob/master/State-Carrying_Functional_Interface.md)
 
-#### 1. Creational (gof):
+#### 1. Creational (gof)
   - Patterns create objects for you, rather than having you instantiate objects directly. This makes program more flexibility in deciding which objects need to be created for a given case.
     - [Builder](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Builder.md)
     - [Factory method](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Factory_Method.md)
     - [Singleton](https://github.com/OndrejKucera/knowledge_design_patterns/blob/master/Singleton.md)
 
-#### 2. Behavioral (gof):
+#### 2. Behavioral (gof)
  - Patterns are specifically concerned with communication between objects.
    - [Command](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Command.md)
    - [Iterator](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Iterator.md)
@@ -24,13 +24,13 @@ Note: Here are not exhausted knowledge about patterns.
    - Dependency Injection (not gof)
    - [Null Object](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Null_Object.md) (not gof)
 
-#### 3. Structural (gof):
+#### 3. Structural (gof)
  - Patterns show class and object composition. They use inheritance to compose interfaces and define ways to compose objects to obtain new functionality.
    - Decorator
    - Adapter https://pavelfatin.com/design-patterns-in-scala/
 
 
-## Functional Patterns:
+## Functional Patterns
 1. Tail Recursion
 2. Mutual Recursion
 3. Filter-Map-Reduce
