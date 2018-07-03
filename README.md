@@ -4,15 +4,15 @@ Knowledge - Design Patterns
 Note: Here are not exhausted knowledge about patterns.
 
 ### Replacing Object-Oriented Patterns:
--  [Functional Interface](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Functional_Interface.md)
--  [State-Carrying Functional Interface](https://github.com/OndrejKucera/knowledge_patterns/blob/master/State-Carrying_Functional_Interface.md)
+- [Functional Interface](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Functional_Interface.md)
+- [State-Carrying Functional Interface](https://github.com/OndrejKucera/knowledge_patterns/blob/master/State-Carrying_Functional_Interface.md)
 
-1. Creational (gof):
+#### Creational (gof):
   - [Builder](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Builder.md)
   - [Factory method](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Factory_Method.md)
   - Singleton https://pavelfatin.com/design-patterns-in-scala/
 
-2. Behavioral:
+#### Behavioral:
  - [Command](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Command.md) (behavioral, gof)
  - [Iterator](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Iterator.md) (behavioral, gof)
  - [Template Method](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Template_Method.md) (behavioral, gof)
@@ -22,7 +22,7 @@ Note: Here are not exhausted knowledge about patterns.
  - Dependency Injection (behavioral)
  - Chain of responsibility (behavioral, gof) https://pavelfatin.com/design-patterns-in-scala/
 
-3. Structural
+#### Structural
  - Decorator (structural, gof)
  - Adapter (structural, gof) https://pavelfatin.com/design-patterns-in-scala/
 
