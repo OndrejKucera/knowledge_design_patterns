@@ -32,3 +32,6 @@ Functional Patterns:
 9) Domain-Specific Language
 
 The main resources were books [Functional Programming Patterns in Scala and Clojure](https://www.goodreads.com/book/show/17610214-functional-programming-patterns-in-scala-and-clojure) and the [blog post from pavelfatin.com] (https://pavelfatin.com/design-patterns-in-scala/)
+
+
+https://en.wikipedia.org/wiki/Design_Patterns#Patterns_by_Type
