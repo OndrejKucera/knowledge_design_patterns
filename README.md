@@ -23,6 +23,7 @@ Note: Here are not exhausted knowledge about patterns.
    - Chain of responsibility (https://pavelfatin.com/design-patterns-in-scala/#chain-of-responsibility)
    - Dependency Injection (not gof)
    - [Null Object](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Null_Object.md) (not gof)
+   - Value Object (not gof)
 
 #### 3. Structural (gof)
  - Patterns show class and object composition. They use inheritance to compose interfaces and define ways to compose objects to obtain new functionality.
