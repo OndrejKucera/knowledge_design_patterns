@@ -25,7 +25,7 @@ Note: Here are not exhausted knowledge about patterns.
    - [Null Object](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Null_Object.md) (not gof)
 
 #### 3. Structural (gof):
- - ...
+ - Patterns show class and object composition. They use inheritance to compose interfaces and define ways to compose objects to obtain new functionality.
    - Decorator
    - Adapter https://pavelfatin.com/design-patterns-in-scala/
 
