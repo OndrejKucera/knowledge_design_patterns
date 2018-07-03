@@ -42,4 +42,4 @@ Note: Here are not exhausted knowledge about patterns.
 9. Domain-Specific Language
 
 ---
-The main resources were book [Functional Programming Patterns in Scala and Clojure](https://www.goodreads.com/book/show/17610214-functional-programming-patterns-in-scala-and-clojure), the [blog post from pavelfatin.com] (https://pavelfatin.com/design-patterns-in-scala/), and [wiki page](https://en.wikipedia.org/wiki/Design_Patterns#Patterns_by_Type)
+The main resources were book [Functional Programming Patterns in Scala and Clojure](https://www.goodreads.com/book/show/17610214-functional-programming-patterns-in-scala-and-clojure), the [blog post from pavelfatin.com](https://pavelfatin.com/design-patterns-in-scala/), and [wiki page](https://en.wikipedia.org/wiki/Design_Patterns#Patterns_by_Type)
