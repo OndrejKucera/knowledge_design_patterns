@@ -25,7 +25,7 @@ It allows to change the behavior of an existing class.
    }
   
    @Override
-   public void attack() {
+   public boolean attack() {
      troll.attack();
      // some other decorated funcionality
    }
@@ -43,5 +43,17 @@ It allows to change the behavior of an existing class.
  ```
 
 ### Scala Replacement
+ -  Create new higher-order function that takes in original-function and returns a new function that runs the original-function and some new functionality.
  ```scala
+ def attack() = ...
+ def fleeBattle() = ...
+ 
+ def decorateMove(originalFn: () => Unit) =
+   () => {
+     calcFn()
+     // new functionality
+   }
+   
+ val decoratedAttack = decorateMove(attack)
+ val decoratedfleeBattle = decorateMove(fleeBattle)
  ```
