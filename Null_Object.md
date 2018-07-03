@@ -19,7 +19,12 @@ To avoid scattering null checks throughout our code by encapsulating the action
  - replace null references and Null Object
  - `Option` indicates that we may not have a value in a type-safe manner.
    - subtypes: `Some` carries a value, singleton object `None` which does not.
+   - if you use option others can imidiately know how to deal with deal with missing value
  - `Either` provides a value when we’ve got one and a default or error value when we don’t.
  ```scala
+ def aSome = Some("foo")
+ 
  aSome.getOrElse("default value")
+ aSome.map((s) => s.toUpperCase)
+ 
  ```
