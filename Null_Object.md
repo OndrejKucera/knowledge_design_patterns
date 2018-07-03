@@ -3,15 +3,25 @@
 To avoid scattering null checks throughout our code by encapsulating the action
  - Lack of a value in Java is represented by a null reference
  - the problem is that this handeling is often repeating in the code
+  if(null == someObject){
+   // default null handling behavior
+ } else {
+   someObject.someMethod()
+ }
  - Solution to this is to create a singleton null object that has the same interface as our real objects but implements our default behavior. We can then use this object in place of null references.
  - trade-offs: the program won't fail fast
  
 ### Java Example
  ```java
- if(null == someObject){
-   // default null handling behavior
- } else {
-   someObject.someMethod()
+ class NullPerson extend Person {
+   ...
+ }
+ 
+ public Person buildPerson(String firstName, String lastName) {
+   if(null != firstName && null != lastName)
+     return new RealPerson(firstName, lastName);
+   else
+     return new NullPerson();
  }
  ```
 
