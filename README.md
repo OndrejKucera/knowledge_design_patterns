@@ -20,14 +20,14 @@ Note: Here are not exhausted knowledge about patterns.
    - [Template Method](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Template_Method.md)
    - [Strategy](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Strategy.md)
    - Visitor
-   - Chain of responsibility (https://pavelfatin.com/design-patterns-in-scala/)
+   - Chain of responsibility (https://pavelfatin.com/design-patterns-in-scala/#chain-of-responsibility)
    - Dependency Injection (not gof)
    - [Null Object](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Null_Object.md) (not gof)
 
 #### 3. Structural (gof)
  - Patterns show class and object composition. They use inheritance to compose interfaces and define ways to compose objects to obtain new functionality.
    - [Decorator](https://github.com/OndrejKucera/knowledge_design_patterns/blob/master/Decorator.md)
-   - Adapter https://pavelfatin.com/design-patterns-in-scala/
+   - Adapter (https://pavelfatin.com/design-patterns-in-scala/#adapter)
 
 
 ## Functional Patterns
