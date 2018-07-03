@@ -12,6 +12,7 @@ To avoid scattering null checks throughout our code by encapsulating the action
  - trade-offs: the program won't fail fast
  
 ### Java Example
+ - Minimizing the surface area of our code where we need to deal with null,
  ```java
  class NullPerson extend Person {
    ...
@@ -30,11 +31,22 @@ To avoid scattering null checks throughout our code by encapsulating the action
  - `Option` indicates that we may not have a value in a type-safe manner.
    - subtypes: `Some` carries a value, singleton object `None` which does not.
    - if you use option others can imidiately know how to deal with deal with missing value
+   ```scala
+   def aSome = Some("foo")
+
+   aSome.getOrElse("default value")
+   aSome.map((s) => s.toUpperCase)
+   ```
  - `Either` provides a value when we’ve got one and a default or error value when we don’t.
+ 
+ - In Scala, there is no need to create Null Object type. We can use `Option`
  ```scala
- def aSome = Some("foo")
+ def buildPerson(firstNameOption: Option[String], lastNameOption: Option[String]) =
+   (for(
+     firstName <- firstNameOption;
+     lastName <- lastNameOption)
+   yield Person(firstName, lastName)).getOrElse(Person("Default First Name", "Default Second Name"))
  
- aSome.getOrElse("default value")
- aSome.map((s) => s.toUpperCase)
- 
+ buildPerson(Some("Mike"), Some("Linn"))
+ buildPerson(Some("Mike"), None)
  ```
