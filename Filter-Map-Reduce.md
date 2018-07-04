@@ -8,3 +8,9 @@ To manipulate a sequence (list, vector, and so on) declaratively using filter, m
  - Related patterns: [Replacing Iterator](), [Tail Recursion](), [Mutual Recursion]()
 
 ### Scala Example
+ ```scala
+ Vector(20.0, 4.5, 50.0, 15.75, 30.0, 3.5)
+   .filter(price => price >= 20)
+   .map(price => price * 0.10)
+   .reduce((total, price) => total + price) // 10.0
+ ```
