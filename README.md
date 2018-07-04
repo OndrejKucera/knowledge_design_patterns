@@ -34,7 +34,7 @@ Note: Here are not exhausted knowledge about patterns.
 Functional programming has its own set of patterns that have evolved out of the functional style.
 1. [Tail Recursion](https://github.com/OndrejKucera/knowledge_design_patterns/blob/master/Tail_Recursion.md)
 2. [Mutual Recursion](https://github.com/OndrejKucera/knowledge_design_patterns/blob/master/Mutual_Recursion.md)
-3. Filter-Map-Reduce
+3. [Filter-Map-Reduce](https://github.com/OndrejKucera/knowledge_design_patterns/blob/master/Filter-Map-Reduce.md)
 4. Function Builder
 5. Memoization
 6. Lazy sequence
