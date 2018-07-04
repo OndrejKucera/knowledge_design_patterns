@@ -96,19 +96,18 @@ Pattern allows to add new operations to an existing data type. Visitor allows to
      def perimeter = 2 * width + 2 * height
    }
  }
- 
+ ```
+ ```scala
  object FirstShapeExample extends PerimeterShapes {
    val aCircle = new Circle(4);
    val aRectangle = new Rectangle(2, 2);	
  }
- ```
-
- ```scala
- import com.mblinn.mbfpp.oo.visitor.FirstShapeExample._
  
+ import com.mblinn.mbfpp.oo.visitor.FirstShapeExample._
  aCircle.perimeter      // 25.132
  aRectangle.perimeter   // 8.0
  ```
+ 
  
  ```scala
  // Extending our Shape with new operations
@@ -125,4 +124,13 @@ Pattern allows to add new operations to an existing data type. Visitor allows to
      def area = width * height
    }	
  }
+ ```
+ ```scala
+ object SecondShapeExample extends AreaShapes {
+   val someShapes = Vector(new Circle(4), new Rectangle(2, 2));
+ }
+
+ import com.mblinn.mbfpp.oo.visitor.SecondShapeExample._
+ for(shape <- someShapes) yield shape.perimeter  // Vector(25.132741228718345, 8.0)
+ for(shape <- someShapes) yield shape.area       // Vector(50.26548245743669, 4.0)
  ```
