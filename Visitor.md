@@ -137,6 +137,7 @@ Pattern allows to add new operations to an existing data type. Visitor allows to
  
  
  ```scala
+ // Creating new Shape
  trait MorePerimeterShapes extends PerimeterShapes {
    class Square(side: Double) extends Shape {
      def perimeter = 4 * side;
