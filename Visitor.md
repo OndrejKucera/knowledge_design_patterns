@@ -59,11 +59,14 @@ Pattern allows to add new operations to an existing data type. Visitor allows to
  ```
 
 ### Scala Replacement
+- Extending the operations in an existing library that uses Scala’s implicit conversion system. This allows us to add new operations to existing libraries.
  ```scala
- class ItemElement (val name: String, val price: Float)
- class Book(name: String, price: Float) extends ItemElement(name, price)
- class Fruit(name: String, price: Float) extends ItemElement(name, price)
- 
+ trait ItemElement {
+   def name: String
+   def price: Float
+ }
+ class Book(val name: String, val price: Float) extends ItemElement
+ class Fruit(val name: String, val price: Float) extends ItemElement
  val items: Array[ItemElement] = Array(new Book("firstBook", 20),
      new Book("SecondBoook", 45), new Fruit("Banana", 10), new Fruit("Apple", 5))
  
@@ -73,6 +76,7 @@ Pattern allows to add new operations to an existing data type. Visitor allows to
  
  items.foldLeft(0.0) {(sum, item) => sum + item.price}
  
- // using new operations
+ // using new operation
  items.foldLeft(0.0) {(sum, item) => sum + item.getDiscountPrice}
  ```
+ - Solution takes advantage of Scala’s mix-in inheritance and traits, which allows us to easily add both new operations and new implementations to a data type.
