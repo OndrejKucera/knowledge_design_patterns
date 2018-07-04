@@ -134,3 +134,27 @@ Pattern allows to add new operations to an existing data type. Visitor allows to
  for(shape <- someShapes) yield shape.perimeter  // Vector(25.132741228718345, 8.0)
  for(shape <- someShapes) yield shape.area       // Vector(50.26548245743669, 4.0)
  ```
+ 
+ 
+ ```scala
+ trait MorePerimeterShapes extends PerimeterShapes {
+   class Square(side: Double) extends Shape {
+     def perimeter = 4 * side;
+   }
+ }
+
+ trait MoreAreaShapes extends AreaShapes with MorePerimeterShapes {
+   class Square(side: Double) extends super.Square(side) with Shape {
+     def area = side * side
+  }
+ }
+ ```
+ ```scala
+ object ThirdShapeExample extends MoreAreaShapes {
+   val someMoreShapes = Vector(new Circle(4), new Rectangle(2, 2), new Square(4));
+ }
+ 
+ import com.mblinn.mbfpp.oo.visitor.ThirdShapeExample._
+ for(shape <- someMoreShapes) yield shape.perimeter   // Vector(25.132741228718345, 8.0, 16.0)
+ for(shape <- someMoreShapes) yield shape.area        //Vector(50.26548245743669, 4.0, 16.0)
+ ```
