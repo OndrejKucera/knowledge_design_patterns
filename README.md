@@ -31,6 +31,7 @@ Note: Here are not exhausted knowledge about patterns.
    - [Adapter](https://github.com/OndrejKucera/knowledge_design_patterns/blob/master/Adapter.md)
 
 ## Functional Patterns
+Functional programming has its own set of patterns that have evolved out of the functional style.
 1. Tail Recursion
 2. Mutual Recursion
 3. Filter-Map-Reduce
