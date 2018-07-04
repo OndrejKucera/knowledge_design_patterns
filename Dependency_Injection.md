@@ -22,3 +22,40 @@ To compose objects together
 ### Scala Replacement
  - Classic Dependency Injection can be used in Scala. We can even use familiar Java frameworks like Spring or Guice
  - Scala pattern called the **Cake pattern** uses Scala traits and self-type annotations to accomplish the same sort of composition and structure that we get with Dependency Injection without the need for a container.
+   - encapsulate the dependencies we want to inject inside of top-level traits
+   - use annotation and mixin inheritance to specify wiring in a typesafe manner
+ ```scala
+ trait MovieDaoComponentTestImpl extends MovieDaoComponent {
+   class MovieDaoTestImpl extends MovieDao {
+     def getMovie(id: String): Movie = new Movie("43", "A Test Movie")
+   }
+ }
+ 
+ trait FavoritesServiceComponentTestImpl extends FavoritesServiceComponent {
+   class FavoritesServiceTestImpl extends FavoritesService {
+     def getFavoriteVideos(id: String): Vector[Video] = Vector(new Video("2"))
+   }
+ }
+ 
+ trait MovieServiceComponentImpl {
+   this: MovieDaoComponent with FavoritesServiceComponent =>
+   val favoritesService: FavoritesService
+   val movieDao: MovieDao
+   
+   class MovieServiceImpl {
+     def getFavoriteDecoratedMovies(userId: String): Vector[DecoratedMovie] =
+       for (
+         favoriteVideo <- favoritesService.getFavoriteVideos(userId);
+         val movie = movieDao.getMovie(favoriteVideo.movieId)
+       ) yield DecoratedMovie(movie, favoriteVideo)
+   } 	
+ }
+
+ object TestComponentRegistery extends MovieServiceComponentImpl
+   with FavoritesServiceComponentTestImpl with MovieDaoComponentTestImpl {
+   
+   val favoritesService = new FavoritesServiceTestImpl
+   val movieDao = new MovieDaoTestImpl
+   val movieService = new MovieServiceImpl 	
+ }
+ ```
