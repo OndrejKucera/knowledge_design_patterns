@@ -109,3 +109,19 @@ Pattern allows to add new operations to an existing data type. Visitor allows to
  aCircle.perimeter      // 25.132
  aRectangle.perimeter   // 8.0
  ```
+   - Extending our Shape with new operations
+   ```scala
+   trait AreaShapes extends PerimeterShapes {
+     trait Shape extends super.Shape {
+       def area: Double
+     }
+     
+     class Circle(radius: Double) extends super.Circle(radius) with Shape {
+       def area = Math.PI * radius * radius
+     }
+     
+     class Rectangle(width: Double, height: Double) extends super.Rectangle(width, height) with Shape {
+       def area = width * height
+     }	
+   }
+   ```
