@@ -65,8 +65,10 @@ Pattern allows to add new operations to an existing data type. Visitor allows to
    def name: String
    def price: Float
  }
+ 
  class Book(val name: String, val price: Float) extends ItemElement
  class Fruit(val name: String, val price: Float) extends ItemElement
+ 
  val items: Array[ItemElement] = Array(new Book("firstBook", 20),
      new Book("SecondBoook", 45), new Fruit("Banana", 10), new Fruit("Apple", 5))
  
