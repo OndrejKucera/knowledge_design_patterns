@@ -32,7 +32,7 @@ Pattern allows to add new operations to an existing data type. Visitor allows to
  }
  
  public interface ShoppingVisitor {
-  	int visit(ItemElement element);
+   int visit(ItemElement element);
  }
  
  public class ShoppingVisitorImpl implements ShoppingVisitor {
