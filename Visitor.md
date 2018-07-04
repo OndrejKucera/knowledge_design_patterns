@@ -43,19 +43,19 @@ Pattern allows to add new operations to an existing data type. Visitor allows to
  }
  
  public class ShoppingClient {
-	  public static void main(String[] args) {
-    ItemElement[] items = new ItemElement[]{new Book(20, "1234"),new Book(100, "5678"),
-        new Fruit(10, "Banana"), new Fruit(5, "Apple")};
+   public static void main(String[] args) {
+     ItemElement[] items = new ItemElement[]{new Book(20, "1234"),new Book(100, "5678"),
+         new Fruit(10, "Banana"), new Fruit(5, "Apple")};
 
-    int total = 0;
-    ShoppingVisitor visitor = new ShoppingVisitorImpl();
-    for(ItemElement item : items){
-      total += item.accept(visitor);
-    }
+     int total = 0;
+     ShoppingVisitor visitor = new ShoppingVisitorImpl();
+     for(ItemElement item : items){
+       total += item.accept(visitor);
+     }
 
-    System.out.println("Total Cost = " + total);
-	 }
-}
+     System.out.println("Total Cost = " + total);
+   }
+ }
  ```
 
 ### Scala Replacement
