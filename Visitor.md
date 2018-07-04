@@ -82,3 +82,30 @@ Pattern allows to add new operations to an existing data type. Visitor allows to
  items.foldLeft(0.0) {(sum, item) => sum + item.getDiscountPrice}
  ```
  - Solution takes advantage of Scala’s mix-in inheritance and traits, which allows us to easily add both new operations and new implementations to a data type.
+ ```scala
+ trait PerimeterShapes {  // we can use Scala’s traits as modules here
+   trait Shape {
+     def perimeter: Double
+   }
+ 
+   class Circle(radius: Double) extends Shape {
+     def perimeter = 2 * Math.PI * radius
+   }
+ 
+   class Rectangle(width: Double, height: Double) extends Shape {
+     def perimeter = 2 * width + 2 * height
+   }
+ }
+ 
+ object FirstShapeExample extends PerimeterShapes {
+   val aCircle = new Circle(4);
+   val aRectangle = new Rectangle(2, 2);	
+ }
+ ```
+
+ ```scala
+ import com.mblinn.mbfpp.oo.visitor.FirstShapeExample._
+ 
+ aCircle.perimeter      // 25.132
+ aRectangle.perimeter   // 8.0
+ ```
