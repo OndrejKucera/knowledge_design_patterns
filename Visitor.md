@@ -60,25 +60,19 @@ Pattern allows to add new operations to an existing data type. Visitor allows to
 
 ### Scala Replacement
  ```scala
- trait Person {
-   def fullName: String
-   def firstName: String
-   def lastName: String
-   def houseNum: Int
-   def street: String
+ class ItemElement (val name: String, val price: Float)
+ class Book(name: String, price: Float) extends ItemElement(name, price)
+ class Fruit(name: String, price: Float) extends ItemElement(name, price)
+ 
+ val items: Array[ItemElement] = Array(new Book("firstBook", 20),
+     new Book("SecondBoook", 45), new Fruit("Banana", 10), new Fruit("Apple", 5))
+ 
+ implicit class ExtendedItem(item: ItemElement) {
+   def getDiscountPrice = item.price * 0.9
  }
  
- class SimplePerson(val firstName: String, val lastName: String,
-   val houseNum: Int, val street: String) extends Person {
-   def fullName = firstName + " " + lastName
- }
+ items.foldLeft(0.0) {(sum, item) => sum + item.price}
  
- val simplePerson = new SimplePerson("Mike", "Linn", 123, "Fake. St.")
- simplePerson.fullName // Mike Linn
- 
- implicit class ExtendedPerson(person: Person) {
-   def fullAddress = person.houseNum + " " + person.street
- }
- 
- simplePerson.fullAddress    // 123 Fake. St.
+ // using new operations
+ items.foldLeft(0.0) {(sum, item) => sum + item.getDiscountPrice}
  ```
