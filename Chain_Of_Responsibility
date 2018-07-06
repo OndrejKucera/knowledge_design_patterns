@@ -1,0 +1,36 @@
+## Chain of responsibility
+
+...
+ - Related patterns: [Builder](https://github.com/OndrejKucera/knowledge_design_patterns/blob/master/Builder.md), [Iterator](https://github.com/OndrejKucera/knowledge_design_patterns/blob/master/Iterator.md), [Filter-Map-Reduce](https://github.com/OndrejKucera/knowledge_design_patterns/blob/master/Filter-Map-Reduce.md), Builder??
+
+## Java example
+ ```java
+ public abstract class EventHandler {
+    private EventHandler next;
+    void setNext(EventHandler handler) { next = handler; }
+
+    public void handle(Event event) {
+        if (canHandle(event)) doHandle(event);
+        else if (next != null) next.handle(event);
+    }
+
+    abstract protected boolean canHandle(Event event);
+    abstract protected void doHandle(Event event);
+}
+
+public class KeyboardHandler extends EventHandler { // MouseHandler...
+    protected boolean canHandle(Event event) {
+        return "keyboard".equals(event.getSource());
+    }
+
+    protected void doHandle(Event event) { /* ... */ }
+}
+
+KeyboardHandler handler = new KeyboardHandler();
+handler.setNext(new MouseHandler());
+ ```
+
+
+### Scala Replacement
+ ```scala
+ ```
