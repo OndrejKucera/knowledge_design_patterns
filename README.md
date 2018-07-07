@@ -20,7 +20,7 @@ Note: Here are not exhausted knowledge about patterns.
    - [Template Method](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Template_Method.md)
    - [Strategy](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Strategy.md)
    - [Visitor](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Visitor.md)
-   - Chain of responsibility (https://pavelfatin.com/design-patterns-in-scala/#chain-of-responsibility)
+   - [Chain of responsibility](https://github.com/OndrejKucera/knowledge_design_patterns/blob/master/Chain_Of_Responsibility.md)
    - [Dependency Injection](https://github.com/OndrejKucera/knowledge_design_patterns/blob/master/Dependency_Injection.md) (not gof)
    - [Null Object](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Null_Object.md) (not gof)
    - Value Object (not gof)
