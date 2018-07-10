@@ -35,12 +35,11 @@ Functional programming has its own set of patterns that have evolved out of the 
 1. [Tail Recursion](https://github.com/OndrejKucera/knowledge_design_patterns/blob/master/Tail_Recursion.md)
 2. [Mutual Recursion](https://github.com/OndrejKucera/knowledge_design_patterns/blob/master/Mutual_Recursion.md)
 3. [Filter-Map-Reduce](https://github.com/OndrejKucera/knowledge_design_patterns/blob/master/Filter-Map-Reduce.md)
-4. Function Builder
-5. Memoization
-6. Lazy sequence
-7. Focused Mutability
-8. Customized Control Flow
-9. Domain-Specific Language
+4. Memoization - To cache the results of a pure function call to avoid performing the same computation more than once
+5. Lazy sequence
+6. Focused Mutability
+7. Customized Control Flow
+8. Domain-Specific Language
 
 ---
 The main resources were book [Functional Programming Patterns in Scala and Clojure](https://www.goodreads.com/book/show/17610214-functional-programming-patterns-in-scala-and-clojure), the blog post from [pavelfatin.com](https://pavelfatin.com/design-patterns-in-scala/), and wikipedia page [Design_Patterns](https://en.wikipedia.org/wiki/Design_Patterns#Patterns_by_Type)
