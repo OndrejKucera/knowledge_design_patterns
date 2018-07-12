@@ -1,4 +1,4 @@
-Knowledge - Design Patterns
+Knowledge - Scala Design Patterns
 ====================
 
 Note: Here are not exhausted knowledge about patterns.
@@ -36,8 +36,8 @@ Functional programming has its own set of patterns that have evolved out of the 
 2. [Mutual Recursion](https://github.com/OndrejKucera/knowledge_design_patterns/blob/master/Mutual_Recursion.md)
 3. [Filter-Map-Reduce](https://github.com/OndrejKucera/knowledge_design_patterns/blob/master/Filter-Map-Reduce.md)
 4. Memoization - To cache the results of a pure function call to avoid performing the same computation more than once
-5. Lazy sequence
-6. Focused Mutability
+5. Lazy sequence - To create a sequence whose members are computed only when needed—this allows us to easily stream results from a computation and to work with infinitely long sequences
+6. Focused Mutability - To use mutable data structures in small, performance-sensitive parts of a program hidden inside of a function while still using immutable data throughout the majority
 7. Customized Control Flow
 8. Domain-Specific Language
 
