@@ -38,8 +38,6 @@ Functional programming has its own set of patterns that have evolved out of the 
 4. Memoization - To cache the results of a pure function call to avoid performing the same computation more than once
 5. Lazy sequence - To create a sequence whose members are computed only when needed—this allows us to easily stream results from a computation and to work with infinitely long sequences
 6. Focused Mutability - To use mutable data structures in small, performance-sensitive parts of a program hidden inside of a function while still using immutable data throughout the majority
-7. Customized Control Flow
-8. Domain-Specific Language
 
 ---
 The main resources were book [Functional Programming Patterns in Scala and Clojure](https://www.goodreads.com/book/show/17610214-functional-programming-patterns-in-scala-and-clojure), the blog post from [pavelfatin.com](https://pavelfatin.com/design-patterns-in-scala/), and wikipedia page [Design_Patterns](https://en.wikipedia.org/wiki/Design_Patterns#Patterns_by_Type)
