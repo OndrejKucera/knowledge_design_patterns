@@ -3,6 +3,9 @@ Knowledge - Scala Design Patterns
 
 Note: Here are not exhausted knowledge about patterns.
 
+
+Design patterns are a well-described solution to the most commonly encountered problems which occur during software development and represents the best practices evolved over a period of time by experienced software developers. They promote reusability which leads to a more robust and maintainable code.
+
 ## Replacing Object-Oriented Patterns with Functional Approach
  - [Functional Interface](https://github.com/OndrejKucera/knowledge_patterns/blob/master/Functional_Interface.md)
  - [State-Carrying Functional Interface](https://github.com/OndrejKucera/knowledge_patterns/blob/master/State-Carrying_Functional_Interface.md)
