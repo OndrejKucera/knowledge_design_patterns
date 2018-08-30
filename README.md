@@ -43,7 +43,7 @@ Functional programming has its own set of patterns that have evolved out of the 
 6. Focused Mutability - To use mutable data structures in small, performance-sensitive parts of a program hidden inside of a function while still using immutable data throughout the majority
 
 ## Anti-Patterns
-https://en.wikipedia.org/wiki/Anti-pattern
+* https://en.wikipedia.org/wiki/Anti-pattern
 
 ---
 The main resources were book [Functional Programming Patterns in Scala and Clojure](https://www.goodreads.com/book/show/17610214-functional-programming-patterns-in-scala-and-clojure), the blog post from [pavelfatin.com](https://pavelfatin.com/design-patterns-in-scala/), and wikipedia page [Design_Patterns](https://en.wikipedia.org/wiki/Design_Patterns#Patterns_by_Type)
